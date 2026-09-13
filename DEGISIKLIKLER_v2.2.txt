@@ -1,0 +1,11 @@
+SOYO Tek Onay v2.2 — uzun kullanım kaydırma/kilit düzeltmesi
+
+- Tam otomatik modda uzun süre çalıştıktan sonra aynı Önerilen ekranında takılı kalma düzeltildi.
+- dispatchGesture(true) artık listenin gerçekten hareket ettiği varsayılmıyor; ekran snapshot değişmezse ACTION_SCROLL_FORWARD ve daha güçlü gesture yöntemleri sırayla deneniyor.
+- Lazy-load için birkaç başarısız turdan sonra daha uzun kaydırma ve gecikmeli ikinci yeniden tarama eklendi.
+- Aynı koordinattaki gesture yakalayıcısına takılmamak için kurtarma turlarında sağ/sol merkezli alternatif swipe eklendi.
+- Uzun stagnasyonda alt menüdeki Önerilen sekmesine seyrek yeniden dokunarak Flutter scroll/lazy-load controller kurtarması eklendi.
+- Gesture tamamlanma/iptal callback'lerinden sonra zorunlu yeniden tarama eklendi.
+- Tek bir sohbette gönderim 5 saniyeden uzun süre sonuçlanmazsa tüm otomasyonu kilitlemek yerine o sohbet atlanıp listeye devam edilir.
+
+Sürüm 2.2 / versionCode 13.

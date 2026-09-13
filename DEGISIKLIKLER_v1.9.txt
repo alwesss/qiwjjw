@@ -1,0 +1,18 @@
+SOYO Tek Onay v1.9 - Güvenlik ve Hız Güncellemesi
+
+Ana düzeltmeler:
+- Öneri listesinden alınan isim sohbet başlığı ile yeniden doğrulanır.
+- Komşu satırdaki kişinin adını alma toleransı daraltıldı.
+- Gecikmiş eski otomatik görevler yeni sohbette çalışamaz (işlem kimliği/epoch).
+- Göndermeden hemen önce sohbet adı ve mesaj metni yeniden kontrol edilir.
+- Gönderme tıklamasından sonra mesajın gerçekten gittiği doğrulanır.
+- SOYO zaten Önerilenler'e döndüyse ekstra geri basılmaz; uygulamadan çıkma engellenir.
+- Tam Otomatik Mod başka SOYO sekmesine düşerse Önerilen sekmesini kendi bulmaya çalışır.
+- Geri dönüş sırasında SOYO arka plana düşerse kurtarma amacıyla tekrar öne alınır.
+- Beklenmeyen erişilebilirlik RuntimeException durumunda servis kendi kendine güvenli şekilde devam eder.
+- Arama alanının mesaj kutusu sanılması zorlaştırıldı.
+- Emoji/sticker/mikrofon/kamera gibi ikonların gönder düğmesi sanılması engellendi.
+- Tarama 300ms -> 120ms, öneri geçişi 1200ms -> 650ms, gönderim retry 450ms -> 220ms seviyesine düşürüldü.
+
+Sürüm: 1.9
+versionCode: 10

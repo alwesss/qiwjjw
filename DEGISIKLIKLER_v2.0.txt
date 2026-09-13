@@ -1,0 +1,14 @@
+SOYO Tek Onay v2.0 - Kaydırma, Devamlılık ve VIP Filtresi
+
+Ana değişiklikler:
+- Kaydırma hareketi küçültüldü ve ekranlar üst üste binecek şekilde ayarlandı.
+- Kaydırma olayının gelmediği cihazlarda 360ms sonra zorunlu yeniden tarama eklendi.
+- Tam otomatik akışın sessizce durmaması için 900ms watchdog eklendi.
+- Takılan otomatik gönderimde önce gönderim durumu doğrulanır, ardından gerekirse güvenli yeniden deneme yapılır.
+- RuntimeException kurtarması doğrudan yeniden göndermek yerine önce gönderimi doğrular.
+- İsteğe bağlı “Sadece VIP olanlara mesaj gönder” seçeneği eklendi.
+- VIP filtresi, Sohbet düğmesiyle aynı satırdaki VIP/VIP1/VIP3 benzeri rozetleri algılar.
+- Varsayılan VIP filtresi kapalıdır; kapalıyken mevcut tüm uygun kişileri işleme davranışı korunur.
+
+Sürüm: 2.0
+versionCode: 11

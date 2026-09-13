@@ -1,0 +1,11 @@
+SOYO Tek Onay v2.3 — sabit hız / gecikmiş tıklama düzeltmesi
+
+- Uzun kullanımda mesajların ve tıklamaların giderek gecikmesine yol açabilen Handler/scan kuyruğu birikmesi düzeltildi.
+- Accessibility event, gesture callback, watchdog ve delayed scan istekleri artık tek bekleyen taramada birleştiriliyor.
+- En erken tarama korunuyor, daha geç aynı işi yapan tekrar callback'ler kuyruğa eklenmiyor.
+- Kaydırma normalde 620 ms, takılma kurtarmasında 720 ms alt sınırla çalışıyor; önceki 900 ms yavaşlama kaldırıldı.
+- Scroll sonrası yeniden tarama 300/400 ms yapıldı; ağır kurtarma mekanizmaları korunuyor.
+- Servis interruption/destroy/reconnect sırasında scan kuyruğu durumu sıfırlanıyor.
+- Tek sohbet için 5 saniyelik timeout aynen korunuyor.
+
+Sürüm 2.3 / versionCode 14.

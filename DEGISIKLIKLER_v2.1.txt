@@ -1,0 +1,11 @@
+SOYO Tek Onay v2.1 - Tam Otomatik Devamlılık + İsim/Tag Düzeltmesi
+
+- AccessibilityService kesintisinde watchdog artık kalıcı olarak durmuyor; otomatik yeniden başlatılıyor.
+- Tam otomatik modda sohbet kutusunda eski taslak/yazı varsa sonsuza kadar bekleme düzeltildi; taslağa dokunmadan kişi atlanıp listeye dönülür.
+- İsim okunamazsa sohbet ekranında kilitlenme engellendi; kısa doğrulama süresinden sonra güvenli şekilde listeye dönülür.
+- Gönderilmiş kişide geri dönüş gecikirse aynı kişiye tekrar mesaj atma engellendi.
+- TAG/etiket/badge/rozet/VIP/level/id benzeri metinler artık kesinlikle isim kabul edilmez.
+- Sohbet başlığında isim için contentDescription/erişilebilirlik etiketi kullanımı kaldırıldı; yalnızca ekranda görünen Text esas alınır.
+- Şekilli Unicode adlar için NFKC + small-caps sadeleştirmesi güçlendirildi ve Unicode harf desteği genişletildi.
+- Önerilenler ekranı kaydırmada birkaç tur değişmezse daha güçlü kurtarma kaydırması eklendi.
+- Sürüm 2.1 / versionCode 12.
